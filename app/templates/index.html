@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgriAdvisor AI</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AgriAdvisor AI 🌱</h1>
+      <p>Your Smart Farming Assistant</p>
+    </header>
+
+    <main>
+      <section class="card" id="dashboard">
+        <h2>Farmer's Dashboard (Jamshedpur)</h2>
+        <div id="weather-info">Loading weather...</div>
+        <div id="price-info">Loading market prices for Tomato...</div>
+      </section>
+
+      <section class="card" id="detector">
+        <h2>Pest & Disease Detector</h2>
+        <form id="upload-form">
+          <input type="file" id="image-input" accept="image/*" required />
+          <button type="submit">Analyze Crop Image</button>
+        </form>
+        <div id="prediction-result" class="result">
+          <p>Upload an image to get a diagnosis.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
